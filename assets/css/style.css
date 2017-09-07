@@ -489,7 +489,7 @@ label {
 #gallery a {
 	display:block;
 	overflow:hidden;
-	margin-bottom:30px;
+	margin-bottom:0px;
 }
 #gallery a img {
 	margin-bottom:0px;
@@ -505,6 +505,7 @@ label {
 	text-transform:uppercase;
 	clear:both;
 	position: relative;
+	margin-bottom:30px;
 
 }
 #gallery .caption {
