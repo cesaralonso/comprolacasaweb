@@ -247,7 +247,7 @@ http://www.gnu.org/licenses/gpl.html
         var firstTop;
         var paddingTop = 0;
 
-        //get the starting position of each element to have parallax applied to it	
+        //get the starting position of each element to have parallax applied to it
         function update() {
 
             $this.each(function() {
@@ -309,11 +309,11 @@ function parallaxInit() {
     });
 }
 
-function parallax() {
-    var scrollPosition = $(window).scrollTop();
-    $('#parallax').css('top', (0 - (scrollPosition * 0.3)) + 'px'); // bg image moves at 30% of scrolling speed
-    $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
-}
+// function parallax() {
+//     var scrollPosition = $(window).scrollTop();
+//     $('#parallax').css('top', (0 - (scrollPosition * 0.3)) + 'px'); // bg image moves at 30% of scrolling speed
+//     $('#hero').css('opacity', ((100 - scrollPosition / 2) * 0.01));
+// }
 
 
 	jQuery(document).ready(function($){
@@ -326,8 +326,8 @@ function parallax() {
 		});
 
 		/*	Wow Anim
-		================================================== */		
-		new WOW().init();	
+		================================================== */
+		new WOW().init();
 
 		/*	Local Scroll
 		================================================== */
@@ -358,7 +358,7 @@ function parallax() {
 		});
 
 		/*	Gallery
-		================================================== */		
+		================================================== */
 			$('#gallery').magnificPopup({
 				delegate: 'a',
 				type: 'image',
@@ -375,7 +375,7 @@ function parallax() {
 						return item.el.attr('title') + '<small></small>';
 					}
 				}
-			});		
+			});
 
 
 			$('#hero').magnificPopup({
@@ -394,7 +394,7 @@ function parallax() {
 						return item.el.attr('title') + '<small></small>';
 					}
 				}
-			});		
+			});
 
 
 		/*	Bootstrap Carousel
@@ -404,4 +404,3 @@ function parallax() {
 
 
 	});
-	

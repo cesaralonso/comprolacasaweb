@@ -13,6 +13,7 @@
 	<link rel='stylesheet' href='assets/css/animate.min.css'>
 	<link rel='stylesheet' href="assets/css/font-awesome.min.css"/>
 	<link rel='stylesheet' href="assets/css/style.css"/>
+	<link rel="stylesheet" href="assets/css/estilos.css">
 
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
@@ -86,15 +87,11 @@
 						Ecoterra Paraiso
 					</p>
 					<p>
-						<a href="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the description" class="btn btn-default btn-lg wow fadeInLeft" role="button"> Ver Galeria </a> &nbsp;
-						
-						<a href="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the 2"></a>
-						<a href="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" title="This is the 3"></a>
-
-
-						
-						
-						<button class="btn btn-default btn-lg wow fadeInRight" role="button">Contactanos</button>
+						<a href="assets/img/4.jpeg" title="This is the description" class="btn btn-default btn-lg wow fadeInLeft" role="button"> Ver Galeria </a> &nbsp;
+						<a href="assets/img/casa01.jpg" title="This is the 2"></a>
+						<a href="assets/img/casa02.jpeg" title="This is the 3"></a>
+						<button class="btn btn-default btn-lg wow fadeInRight" role="button" data-toggle="modal" data-target="#modalCasaContacto">Contactanos</button>
+						<button class="btn btn-default btn-lg wow fadeInRight" role="button" onClick="window.location = 'detalle.html';">Ver Detalles</button>
 					</p>
 				</div>
 			</center>
@@ -104,6 +101,88 @@
 	</div>
 </div>
 </section>
+
+<!-- Modal Contacto -->
+<div id="modalCasaContacto" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Constructora los patos</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+
+					<div class="col-md-5">
+						<img src="assets/img/4b.jpeg" alt="">
+						<p class="modal-precio">$560,000</p>
+						<p class="modal-modelo">Náutica Primer Nivel</p>
+						<p class="modal-fraccionamiento">EcoTerra Paraiso</p>
+						<p class="modal-colonia">Col. Real Vallarta, Zapopan, Jalisco.</p>
+						<div class="panel panel-default">
+		 				 <div class="panel-heading">
+		 					 <h4 class="panel-title">
+		 					 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTel">
+		 					 Teléfono </a>
+		 					 </h4>
+		 				 </div>
+		 				 <div id="collapseTel" class="panel-collapse collapse">
+		 					 <div class="panel-body">
+		 							Tel: (33) 3165 1000. (33) 3110 1112.
+		 							<br>
+		 							Atención a Clientes: Tel. 01800 847 2867
+		 					 </div>
+		 				 </div>
+		 			 </div>
+
+		 			 <div class="panel panel-default">
+		 				 <div class="panel-heading">
+		 					 <h4 class="panel-title">
+		 					 <a data-toggle="collapse" data-parent="#accordion" href="#collapseEmail">
+		 					 Correo </a>
+		 					 </h4>
+		 				 </div>
+		 				 <div id="collapseEmail" class="panel-collapse collapse">
+		 					 <div class="panel-body">
+		 							lospatos@constructura.com.mx
+		 					 </div>
+		 				 </div>
+		 			 </div>
+					</div>
+
+					<div class="col-md-7">
+						<div class="container col-md-12">
+						  <h3>Contáctame</h3>
+						  <form action="#">
+						    <div class="form-group">
+						      <label for="email">Correo *:</label>
+						      <input type="email" class="form-control" id="email" placeholder="Ingresa el Correo" name="email" required>
+						    </div>
+								<div class="form-group">
+						      <label for="email">Teléfono *:</label>
+						      <input type="tel" class="form-control" id="email" placeholder="Ingresa el Teléfono" name="email" required>
+						    </div>
+						    <div class="form-group">
+						      <label for="pwd">Comentarios:</label>
+						      <textarea class="form-control" rows="5" id="comment"></textarea>
+						    </div>
+						    <button type="submit" class="btn btn-default">Enviar</button>
+						  </form>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
 <!-- About
 	================================================== -->
 <!-- <section id="about" class="parallax section" style="background-image: url(assets/img/event3.jpg);">
