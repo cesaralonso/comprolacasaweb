@@ -1304,6 +1304,94 @@ img.mfp-img {
 	margin: 5px;
 	color: #fff;
 }
+
+.modal-precio
+{
+  margin: 0;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal-modelo
+{
+	margin: 5px 0 0 0;
+  float: left;
+  font-size: 14px;
+}
+
+.modal-fraccionamiento
+{
+	margin: 0;
+  font-size: 12px;
+}
+
+.modal-colonia
+{
+	margin: 0;
+  font-size: 12px;
+}
+
+.espaciador
+{
+	margin-top: 80px;
+}
+
+.whitecolor
+{
+	color: #fff;
+}
+
+.bgblue
+{
+	background-color: #3cb0dd;
+}
+
+.detalle-precio
+{
+	margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+	color: #3cb0dd;
+}
+
+.detalle-info
+{
+	margin: 5px 20px;
+  font-size: 14px;
+	color: #3cb0dd;
+}
+
+.label-detalle
+{
+	margin: 5px 20px;
+  font-size: 14px;
+	color: #3cb0dd;
+	font-weight: bold;
+}
+
+/****Busqueda******/
+.title-busqueda
+{
+	font-size: 25px;
+	color: #fff;
+	font-weight: bold;
+	margin: 20px 0 20px 20px;
+}
+
+.botones-centrados
+{
+	position: absolute; left: 50%; top: 50%; z-index: 3;
+}
+
+.centrado-porcentual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
 /***SLIDER*****/
 
 
@@ -1341,4 +1429,3 @@ height: 25px;
 background: #4CAF50;
 cursor: pointer;
 }
-
