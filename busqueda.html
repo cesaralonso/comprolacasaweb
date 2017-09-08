@@ -72,87 +72,129 @@
 </div>
 </header>
 
-<div class="row espaciador bgblue whitecolor">
-	<div class="col-md-2">
-		<h2 class="title-busqueda">Busqueda</h2>
-		<div class="form-group col-xs-12">
-			 <label for="sel1">Ciudad:</label>
-			 <select class="form-control" id="sel1">
-				 <option>1</option>
-				 <option>2</option>
-				 <option>3</option>
-				 <option>4</option>
-			 </select>
+<div class="row espaciador  fullscreen">
+		<div class="col-md-2 whitecolor bgblue">
+			<h2 class="title-busqueda">Busqueda</h2>
+			<div class="form-group col-xs-12">
+				 <label for="sel1">Ciudad:</label>
+				 <select class="form-control" id="sel1">
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+				 </select>
+			</div>
+
+			<div class="form-group col-xs-12">
+				 <label for="sel1">Fraccionamiento:</label>
+				 <select class="form-control" id="sel1">
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+				 </select>
+			</div>
+
+			<div class="form-group col-xs-12">
+				 <label for="sel1">Habitaciones:</label>
+				 <select class="form-control" id="sel1">
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+				 </select>
+			</div>
+
+			<div class="form-group col-xs-12">
+				 <label for="sel1">Baños:</label>
+				 <select class="form-control" id="sel1">
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+				 </select>
+			</div>
+
+			<div id="slidecontainer" class="col-xs-12">
+				<input type="range" min="1" max="100" value="50" class="slider1" id="myRange">
+				<p>Value: <span id="demo"></span></p>
+			</div>
+
+			<div id="slidecontainer" class="col-xs-12">
+				<input type="range" min="1" max="100" value="50" class="slider2" id="Range2">
+				<p>Value: <span id="number2"></span></p>
+			</div>
+
+			<script>
+				var slider2 = document.getElementById("Range2");
+				var output2 = document.getElementById("number2");
+				output2.innerHTML = slider2.value;
+
+				slider2.oninput = function()
+				{
+					output2.innerHTML = this.value;
+				}
+			</script>
+
+			<script>
+				var slider1 = document.getElementById("myRange");
+				var output1 = document.getElementById("demo");
+				output1.innerHTML = slider1.value;
+
+				slider1.oninput = function()
+				{
+					output1.innerHTML = this.value;
+				}
+			</script>
+
+			<input type="submit" data-inline="true" value="BUSCAR" class="btn-blue">
+
 		</div>
+		<div class="col-md-3 whitebox">
+			<h2 class="">Resultados</h2>
+			<ul class="media-list">
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+				<li class="media">
+			    <div class="media-body">
+			      <h4 class="media-heading">Media heading</h4>
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+			    </div>
+			  </li>
+			</ul>
 
-		<div class="form-group col-xs-12">
-			 <label for="sel1">Fraccionamiento:</label>
-			 <select class="form-control" id="sel1">
-				 <option>1</option>
-				 <option>2</option>
-				 <option>3</option>
-				 <option>4</option>
-			 </select>
 		</div>
-
-		<div class="form-group col-xs-12">
-			 <label for="sel1">Habitaciones:</label>
-			 <select class="form-control" id="sel1">
-				 <option>1</option>
-				 <option>2</option>
-				 <option>3</option>
-				 <option>4</option>
-			 </select>
+		<div class="col-md-7 mapbox">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15023.619016135399!2d-103.46851584999999!3d19.7166788!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1504800852872" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-
-		<div class="form-group col-xs-12">
-			 <label for="sel1">Baños:</label>
-			 <select class="form-control" id="sel1">
-				 <option>1</option>
-				 <option>2</option>
-				 <option>3</option>
-				 <option>4</option>
-			 </select>
-		</div>
-
-		<div id="slidecontainer" class="col-xs-12">
-			<input type="range" min="1" max="100" value="50" class="slider1" id="myRange">
-			<p>Value: <span id="demo"></span></p>
-		</div>
-
-		<div id="slidecontainer" class="col-xs-12">
-			<input type="range" min="1" max="100" value="50" class="slider2" id="Range2">
-			<p>Value: <span id="number2"></span></p>
-		</div>
-
-		<script>
-			var slider2 = document.getElementById("Range2");
-			var output2 = document.getElementById("number2");
-			output2.innerHTML = slider2.value;
-
-			slider2.oninput = function()
-			{
-				output2.innerHTML = this.value;
-			}
-		</script>
-
-		<script>
-			var slider1 = document.getElementById("myRange");
-			var output1 = document.getElementById("demo");
-			output1.innerHTML = slider1.value;
-
-			slider1.oninput = function()
-			{
-				output1.innerHTML = this.value;
-			}
-		</script>
-
-		<input type="submit" data-inline="true" value="BUSCAR" class="btn-blue">
-
-	</div>
-	<div class="col-md-10">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15023.619016135399!2d-103.46851584999999!3d19.7166788!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1504800852872" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
 </div>
 <!-- Credits
 =============================================== -->

@@ -134,6 +134,7 @@ img {
 	border-width:2px;
 	padding:15px 20px;
 	border-radius: 50px;
+	margin-right: 20px;
 }
 .btn-default:hover,.btn-default:focus {
 	background-color:#F9FAFD;
@@ -430,6 +431,7 @@ label {
 	margin-top:140px;
 	padding:0;
 	color:#FFF;
+	height: 90vh;
 }
 #hero .herotext {
 	padding:160px 0px;
@@ -1306,6 +1308,16 @@ img.mfp-img {
 	color: #fff;
 }
 
+.ico-circle-white
+{
+	padding: 0px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 5px;
+	color: #3cb0dd;
+	font-size: 2em;
+}
+
 .modal-precio
 {
   margin: 0;
@@ -1343,15 +1355,52 @@ img.mfp-img {
 	color: #fff;
 }
 
+.padding
+{
+	padding: 30px 20px;
+}
+
 .bgblue
 {
 	background-color: #3cb0dd;
+	height: 90vh;
+}
+
+.whitebox
+{
+	background-color: #fff;
+	height: 90vh;
+	padding: 20px;
+}
+
+.whitebox h2
+{
+	font-size: 25px;
+}
+
+.mapbox
+{
+	padding-left: 0px;
+}
+
+
+.fullscreen img
+{
+	height: 100vh;
+	width: 100%;
+}
+
+
+.fullscreen iframe
+{
+	width: 100%;
+	height: 90vh;
 }
 
 .detalle-precio
 {
-	margin: 20px;
-  font-size: 25px;
+	margin-left: 20px;
+  font-size: 20px;
   font-weight: bold;
 	color: #3cb0dd;
 }
@@ -1388,10 +1437,13 @@ img.mfp-img {
 .centrado-porcentual {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
+
+/*Busqueda Map*/
+
 
 /***SLIDER*****/
 

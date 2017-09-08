@@ -71,8 +71,9 @@
 	</nav>
 </div>
 </header>
-<div class="row">
-  <img src="assets/img/4.jpeg" alt="">
+
+<div class="row fullscreen">
+  <img src="assets/img/4.jpeg" alt="" class="">
   <center>
     <div class="herotext centrado-porcentual" id="hero">
       <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">Náutica <span class="lighter">PRIMER NIVEL</span></h1>
@@ -80,14 +81,14 @@
         Ecoterra Paraiso
       </p>
       <p>
-        <a href="assets/img/4.jpeg" title="This is the description" class="btn btn-default btn-lg wow fadeInLeft" role="button"> Ver Galeria </a> &nbsp;
+        <a href="assets/img/4.jpeg" title="This is the description" class="btn btn-default btn-lg wow fadeInLeft" role="button"><span class="glyphicon glyphicon-picture ico-circle-white "></span></a>
         <a href="assets/img/casa01.jpg" title="This is the 2"></a>
         <a href="assets/img/casa02.jpeg" title="This is the 3"></a>
-        <button class="btn btn-default btn-lg wow fadeInRight" role="button" data-toggle="modal" data-target="#modalCasaContacto">Contactanos</button>
+				<button class="btn btn-default wow fadeInRight" role="button" data-toggle="modal" data-target="#modalCasaVideo"><span class="glyphicon glyphicon-facetime-video ico-circle-white"></span></button>
+        <button class="btn btn-default btn-lg wow fadeInRight" role="button" data-toggle="modal" data-target="#modalCasaContacto"><span class="glyphicon glyphicon-earphone ico-circle-white"></span></button>
       </p>
     </div>
   </center>
-
 </div>
 
 <!-- Modal Contacto -->
@@ -172,68 +173,100 @@
 	</div>
 </div>
 
+<!-- Modal Contacto -->
+<div id="modalCasaVideo" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Constructora los patos</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
 
-<div class="row whitecolor">
+					<div class="col-md-12">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/9L2190lP4HM" frameborder="0" allowfullscreen></iframe>
+					</div>
+
+				</div>
+
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
 	<div class="col-md-4">
-    <table class="table">
-      <tbody>
-        <tr>
-          <td><label for="" class="label-detalle">Precio: </label></td>
-          <td><p class="detalle-precio">$560,000</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Modelo: </label></td>
-          <td><p class="detalle-info">Náutica Primer Nivel</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Fraccionamiento: </label></td>
-          <td><p class="detalle-info">Los Camichines</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Colonia: </label></td>
-          <td><p class="detalle-info">Cabañas del Real</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Ciudad: </label></td>
-          <td><p class="detalle-info">Guzmán</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Estado: </label></td>
-          <td><p class="detalle-info">Jalisco</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Habitaciones: </label></td>
-          <td><p class="detalle-info">3</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Baños: </label></td>
-          <td><p class="detalle-info">1</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Superficie: </label></td>
-          <td><p class="detalle-info">50mts</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Constructora: </label></td>
-          <td><p class="detalle-info">Los patos</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Teléfono: </label></td>
-          <td><p class="detalle-info">3411110090</p></td>
-        </tr>
-        <tr>
-          <td><label for="" class="label-detalle">Correo: </label></td>
-          <td><p class="detalle-info">lospatos@constructora.com</p></td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      <center>
-        <span class=""><i class="glyphicon glyphicon-earphone ico-circle"></i></span>
-        <span class=""><i class="glyphicon glyphicon-share ico-circle"></i></span>
-        <span class=""><i class="glyphicon glyphicon-heart ico-circle"></i></span>
-      </center>
-    </p>
+		<div class="padding">
+				<h2>Descripción</h2>
+				<table class="table">
+					<tbody>
+						<tr>
+							<td><label for="" class="label-detalle">Precio: </label></td>
+							<td><p class="detalle-precio">$560,000</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Constructora: </label></td>
+							<td><p class="detalle-info">Los patos</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Modelo: </label></td>
+							<td><p class="detalle-info">Náutica Primer Nivel</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Fraccionamiento: </label></td>
+							<td><p class="detalle-info">Los Camichines</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Colonia: </label></td>
+							<td><p class="detalle-info">Cabañas del Real</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Ciudad: </label></td>
+							<td><p class="detalle-info">Guzmán</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Estado: </label></td>
+							<td><p class="detalle-info">Jalisco</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Habitaciones: </label></td>
+							<td><p class="detalle-info">3</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Baños: </label></td>
+							<td><p class="detalle-info">1</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Superficie: </label></td>
+							<td><p class="detalle-info">50mts</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Teléfono: </label></td>
+							<td><p class="detalle-info">3411110090</p></td>
+						</tr>
+						<tr>
+							<td><label for="" class="label-detalle">Correo: </label></td>
+							<td><p class="detalle-info">lospatos@constructora.com</p></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					<center>
+						<span class=""><i class="glyphicon glyphicon-earphone ico-circle"></i></span>
+						<span class=""><i class="glyphicon glyphicon-share ico-circle"></i></span>
+						<span class=""><i class="glyphicon glyphicon-heart ico-circle"></i></span>
+					</center>
+				</p>
+		</div>
+
+
 
 	</div>
 	<div class="col-md-8">
