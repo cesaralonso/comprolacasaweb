@@ -8,11 +8,19 @@
 	<meta name="author" content="">
 	<title>Compro la casa</title>
 
+
+
 	<!-- Styles -->
 	<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
 	<link rel='stylesheet' href='assets/css/animate.min.css'>
 	<link rel='stylesheet' href="assets/css/font-awesome.min.css"/>
 	<link rel='stylesheet' href="assets/css/style.css"/>
+
+	<link rel="stylesheet" href="assets/css/slider.css">
+
+
+	<!-- Librerias para range slider -->
+
 
 
 	<!-- Fonts -->
@@ -115,84 +123,108 @@
 				 </select>
 			</div>
 
-			<div id="slidecontainer" class="col-xs-12">
-				<input type="range" min="1" max="100" value="50" class="slider1" id="myRange">
-				<p>Value: <span id="demo"></span></p>
-			</div>
 
-			<div id="slidecontainer" class="col-xs-12">
-				<input type="range" min="1" max="100" value="50" class="slider2" id="Range2">
-				<p>Value: <span id="number2"></span></p>
-			</div>
-
-			<script>
-				var slider2 = document.getElementById("Range2");
-				var output2 = document.getElementById("number2");
-				output2.innerHTML = slider2.value;
-
-				slider2.oninput = function()
-				{
-					output2.innerHTML = this.value;
-				}
-			</script>
-
-			<script>
-				var slider1 = document.getElementById("myRange");
-				var output1 = document.getElementById("demo");
-				output1.innerHTML = slider1.value;
-
-				slider1.oninput = function()
-				{
-					output1.innerHTML = this.value;
-				}
-			</script>
+			<div data-role="rangeslider">
+        <label for="range-1a">Precio:</label>
+        <input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">
+        <label for="range-1b">Rangeslider:</label>
+        <input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80" data-popup-enabled="true" data-show-value="true">
+      </div>
 
 			<input type="submit" data-inline="true" value="BUSCAR" class="btn-blue">
 
 		</div>
-		<div class="col-md-3 whitebox">
+		<div class="col-md-5 whitebox">
 			<h2 class="">Resultados</h2>
 			<ul class="media-list">
-				<li class="media">
+			  <li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3 <span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1 <span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+			      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.</p>
 			    </div>
 			  </li>
 				<li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3 <span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1 <span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.
 			    </div>
 			  </li>
 				<li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3 <span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1 <span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.
 			    </div>
 			  </li>
 				<li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3 <span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1 <span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.
 			    </div>
 			  </li>
 				<li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<div class="etiqueta">
+							<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3
+						</div>
+						<div class="etiqueta">
+							<span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1
+						</div>
+						<div class="etiqueta">
+							<span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.	
+						</p>
+
 			    </div>
 			  </li>
 				<li class="media">
+			    <div class="pull-left">
+			      <a href="#">
+			        <img class="media-objec" src="http://lorempixel.com/64/64/" alt="..." style="width:64px; height:64px;">
+			      </a>
+			    </div>
 			    <div class="media-body">
 			      <h4 class="media-heading">Media heading</h4>
-			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, beatae?
+						<span class="glyphicon glyphicon-bed"></span> Habitaciones: 3 <span class="glyphicon glyphicon-tree-deciduous"></span> Baños: 1 <span class="glyphicon glyphicon-home"></span> Superficie: 200mts
+			      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, numquam.
 			    </div>
 			  </li>
 			</ul>
 
+
 		</div>
-		<div class="col-md-7 mapbox">
+		<div class="col-md-5 mapbox">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15023.619016135399!2d-103.46851584999999!3d19.7166788!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1504800852872" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 </div>

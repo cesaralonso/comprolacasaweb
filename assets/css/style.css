@@ -1373,6 +1373,12 @@ img.mfp-img {
 	padding: 20px;
 }
 
+.whitebox-footer
+{
+	background-color: #fff;
+	padding: 20px;
+}
+
 .whitebox h2
 {
 	font-size: 25px;
@@ -1420,6 +1426,22 @@ img.mfp-img {
 	font-weight: bold;
 }
 
+/***carousel Indicators*****/
+.carousel-control.right
+{
+	right: 60px;
+}
+
+.carousel-control.left
+{
+	left: 60px;
+}
+
+.carousel-indicators
+{
+	bottom: 60px;
+}
+
 /****Busqueda******/
 .title-busqueda
 {
@@ -1440,6 +1462,16 @@ img.mfp-img {
     top: 65%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+}
+
+.etiqueta
+{
+	font-size: 12px;
+	color: #fff;
+	background-color: #c1c1c1;
+	padding: 3px;
+	display: inline-block;
+	border-radius: 5px;
 }
 
 /*Busqueda Map*/
